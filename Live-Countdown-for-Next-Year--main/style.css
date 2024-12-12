@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+}
+
+div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 180px;
+    width: 200px   
+}
+
+h2 {
+    color: #fff;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(rgb(13, 193, 238), rgb(191, 241, 10));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+span{
+    color: #fff;
+    background: -webkit-linear-gradient(rgb(207, 230, 3), rgb(3, 236, 34));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    margin-left: 2px;
+    margin-bottom: 1rem;
+}
+
+p {
+    height: 100px;
+    width: 500px;
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
+    padding: 32px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #ffffff;
+    font-size: 28px;
+    box-shadow: 0 0 20px #f3efef;
+    border-radius: 10px;
+    display: block;
+    margin: 18px;
+    margin-bottom: 6rem;
+    margin-left: 30px;
+    cursor: pointer;
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+p:hover {
+    background-position: right center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Floating Effect  */
+@keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
